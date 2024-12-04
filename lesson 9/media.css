@@ -1,0 +1,12 @@
+@media screen and (max-width: 900px;) { 
+    .hamburger { display: inline-block;}
+    .menu { display: block;}
+    .menu ul{ display: none;}
+    .logo { display: inline-block; margin-right: 65%; margin-right: 60vw;}
+    .menu ul{transition: all 0.5s ease; opacity:0; position: absolute; width: calc(100vw-2rem);top: 6rem;} 
+    .menu ul li{ padding: 5px 2rem; display: block; text-align: end;}
+    .menu ul li.btn { display: none ;}
+    .menu ul li a {  color: rgba(160, 158, 155, 0.704);}
+    .menu ul li a:hover{color: antiquewhite;}
+    .hamburger:has(#burger-trigger:checked) + ul{ display: block; transform: translateY(0);opacity:1;}
+}
